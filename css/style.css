@@ -111,3 +111,27 @@ banner style
   padding-top: 40px;
   width: 60%;
 }
+
+/* -------------------
+logo banner style
+--------------------- */
+
+.logo-banner {
+  display: flex;
+  margin: 0 165px;
+}
+
+.logo-img {
+  width: 84px;
+  height: 26px;
+  padding: 60px;
+}
+
+/* --------------------------
+Popular Collection Style
+-------------------------- */
+
+.pop-collec {
+  border: 1px solid red;
+  margin: 100px 196px;
+}
