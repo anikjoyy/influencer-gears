@@ -17,6 +17,10 @@ body {
   margin: 0;
 }
 
+.highlight {
+  color: #e02c6d;
+}
+
 .btn {
   outline: 0;
   border: 0;
@@ -33,10 +37,7 @@ body {
   box-shadow: 0 7px 0 #a5075e;
 }
 
-/* ----------
-button 3D animation
-------------- */
-
+/* button 3D animation */
 .btn:active {
   top: 5px;
   box-shadow: 0 2px 0 #a5075e;
@@ -98,11 +99,12 @@ banner style
   grid-template-columns: repeat(2, 1fr);
 }
 
-.banner-left h1 {
+.text-style {
   font-weight: 900;
   font-size: 52px;
   line-height: 70px;
 }
+
 .banner-left p {
   font-size: 16px;
   letter-spacing: 0.018em;
@@ -193,9 +195,11 @@ Popular Collection Style
 .fa-star {
   font-size: 12px;
 }
+
 .fa-star.filled {
   color: #ffc014;
 }
+
 .fa-star.empty {
   color: #aeaeaa;
 }
@@ -222,11 +226,37 @@ Popular Collection Style
   padding-left: 5px;
 }
 
+/* -------------------
+article style
+----------------------------------- */
+
+.article-design {
+  margin-top: 300px;
+}
+
+.article-all {
+  margin: 100px 196px;
+  padding-left: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.article-left img {
+  box-shadow: 0px 15px 13.35px rgba(0, 0, 0, 0.452);
+  width: 70%;
+  border-radius: 20px;
+}
+
+#special-text {
+  text-align: justify;
+  color: #3a3a3a;
+}
+
 /* -----------------
 footer section
 -------------------------- */
 
-footer {
+.footer-design {
   background-color: #080835;
   margin-top: 5%;
   height: 225px;
