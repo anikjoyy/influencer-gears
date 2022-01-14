@@ -1,0 +1,113 @@
+/* ----------------
+google font
+------------------- */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+/* -------------------- 
+common css styles
+----------------- */
+
+header {
+  padding: 50px 120px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+.btn {
+  outline: 0;
+  border: 0;
+  margin: 10px 0;
+  padding: 12px 24px;
+  background-color: #e02c6d;
+  color: #ffffff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 41px;
+  top: 0;
+  position: relative;
+  box-shadow: 0 7px 0 #a5075e;
+}
+
+/* ----------
+button 3D animation
+------------- */
+
+.btn:active {
+  top: 5px;
+  box-shadow: 0 2px 0 #a5075e;
+}
+
+.btn i {
+  width: 24px;
+  height: 24px;
+  margin: 0 8px;
+}
+
+/* -------------------- 
+navigation styles
+----------------------- */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 80px;
+  align-items: center;
+}
+
+.heading-style {
+  color: #3a3a3a;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 36px;
+}
+
+.navbar {
+  display: flex;
+}
+
+.navbar li {
+  list-style: none;
+  margin-right: 34px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.navbar li a:hover {
+  background-color: #e02c6d;
+  padding: 5px 9px;
+  color: #ffffff;
+}
+
+/* ---------------
+banner style
+------------- */
+
+.banner {
+  padding-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.banner-left h1 {
+  font-weight: 900;
+  font-size: 52px;
+  line-height: 70px;
+}
+.banner-left p {
+  font-size: 16px;
+}
+.banner-right img {
+  padding-left: 133px;
+  padding-top: 40px;
+  width: 60%;
+}
