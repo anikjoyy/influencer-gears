@@ -89,6 +89,17 @@ nav {
   color: #ffffff;
 }
 
+/* navbar toggler  */
+
+#nav-toggler {
+  display: none;
+}
+.nav-toogler-icon {
+  display: none;
+  color: #000000;
+  font-size: 30px;
+}
+
 /* ---------------
 banner style
 ------------- */
@@ -102,7 +113,6 @@ banner style
 .text-style {
   font-weight: 900;
   font-size: 52px;
-  line-height: 70px;
 }
 
 .banner-left p {
@@ -120,8 +130,9 @@ logo banner style
 --------------------- */
 
 .logo-banner {
-  display: flex;
+  display: grid;
   margin: 0 165px;
+  grid-template-columns: repeat(7, 1fr);
 }
 
 .logo-img {
@@ -135,15 +146,15 @@ Popular Collection Style
 -------------------------- */
 
 .pop-collec {
-  margin: 100px 196px;
   padding-left: 20px;
+  padding-top: 50px;
 }
 
 .product-collec {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   justify-content: center;
-  grid-column-gap: 30px;
+  grid-column-gap: 20px;
   grid-row-gap: 30px;
 }
 
@@ -219,7 +230,7 @@ Popular Collection Style
   color: #e02c6d;
   padding-top: 50px;
   text-decoration: none;
-  padding-right: 60px;
+  padding-right: 150px;
 }
 
 .pop-collec i {
@@ -227,29 +238,39 @@ Popular Collection Style
 }
 
 /* -------------------
-article style
+Contact us style
 ----------------------------------- */
 
-.article-design {
-  margin-top: 300px;
+.contact-design {
+  padding-left: 20px;
+  padding-top: 120px;
 }
 
-.article-all {
-  margin: 100px 196px;
-  padding-left: 20px;
+.contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
 }
 
-.article-left img {
-  box-shadow: 0px 15px 13.35px rgba(0, 0, 0, 0.452);
-  width: 70%;
-  border-radius: 20px;
+.contact-left img {
+  margin-left: 200px;
+  margin-top: -70px;
+  width: 60%;
 }
 
-#special-text {
-  text-align: justify;
-  color: #3a3a3a;
+.contact-right form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.text-field {
+  width: 90%;
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 18px;
+  font-family: inherit;
+  outline: 0;
+  border: 1px solid #e02c6d;
 }
 
 /* -----------------
@@ -287,4 +308,79 @@ footer section
 .footer-icon i {
   padding-top: 10px;
   padding-left: 5px;
+}
+
+/* -------------------------------
+Media Queries
+----------------------------- */
+
+@media only screen and (max-width: 688px) {
+  .logo-banner {
+    display: none;
+  }
+
+  .nav-toogler-icon {
+    display: block;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    background-color: #c56387;
+    color: #ffffff;
+    padding: 20px;
+    transform: translateY(-500px);
+    transition: 0.5s ease-in-out;
+  }
+  .navbar li {
+    padding: 10px;
+  }
+  .navbar li a {
+    color: #ffffff;
+  }
+  #nav-toggler:checked ~ .navbar {
+    transform: translateY(0);
+  }
+  .banner,
+  .contact {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .contact-left img {
+    margin-top: 2px;
+    margin-left: 30px;
+  }
+
+  .contact-right {
+    margin-top: 10px;
+    margin-left: 0;
+  }
+
+  .banner-left,
+  .contact-right {
+    order: 2;
+  }
+
+  .text-style {
+    font-size: 30px;
+  }
+
+  .logo-banner {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .product-collec {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-design,
+  .pop-collec {
+    max-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
 }
