@@ -9,7 +9,7 @@ common css styles
 ----------------- */
 
 header {
-  padding: 50px 120px;
+  margin: 50px 120px;
 }
 
 body {
@@ -122,22 +122,6 @@ banner style
   padding-left: 133px;
   padding-top: 40px;
   width: 60%;
-}
-
-/* -------------------
-logo banner style
---------------------- */
-
-.logo-banner {
-  display: grid;
-  margin: 0 165px;
-  grid-template-columns: repeat(7, 1fr);
-}
-
-.logo-img {
-  width: 84px;
-  height: 26px;
-  padding: 60px;
 }
 
 /* --------------------------
@@ -314,8 +298,8 @@ Media Queries
 ----------------------------- */
 
 @media only screen and (max-width: 992px) {
-  .logo-banner {
-    display: none;
+  header {
+    margin: 10%;
   }
 
   /* --------------
@@ -328,7 +312,7 @@ Media Queries
 
   .navbar {
     position: absolute;
-    top: 100px;
+    top: 150px;
     left: 0;
     width: 100%;
     flex-direction: column;
@@ -357,9 +341,13 @@ Media Queries
   ------------------------------- */
 
   .banner,
-  .product-collec,
   .contact {
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .product-collec {
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 5px;
   }
 
   .banner-left {
@@ -378,8 +366,11 @@ Media Queries
     max-width: 90%;
   }
 
-  .footer-design,
-  .pop-collec {
+  /* .pop-collec {
+    padding-left: 0;
+  } */
+
+  .footer-design {
     max-width: 100%;
   }
 }
